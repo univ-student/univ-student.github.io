@@ -1,0 +1,28 @@
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet">
+    <title>2進数変換</title>
+  </head>
+  <body>
+    <pre class="prettyprint">
+int binary(int a,int b,int* array)
+{
+  for(i = 0; a > 0; i++){
+    b = a%2;
+    a = a/2;
+   array[i]= b;
+  }
+  while(i >= 0){
+    printf("%d", array[i]);
+    i--;
+  }
+  printf("\n");
+
+  return 0;
+}
+    </pre>
+  </body>
+</html>
